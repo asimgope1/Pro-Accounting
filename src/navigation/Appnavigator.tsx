@@ -4,9 +4,12 @@ import { checkuserToken } from '../redux/actions/auth';
 import HomeStack from './HomeStack';
 import LoginStack from './LoginStack';
 
-export default Appnavigator = () => {
+const Appnavigator = () => {
   const dispatch = useDispatch();
   dispatch(checkuserToken());
   const authStatus = useSelector(state => state.authStatus);
   return authStatus ? <HomeStack /> : <LoginStack />;
 };
+
+
+export default Appnavigator;

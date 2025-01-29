@@ -3,11 +3,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Splash from '../Pages/Splash/Splash';
 import Login from '../Pages/Login/Login';
 import Signup from '../Pages/Signup/Signup';
-import Terms from './../Pages/Terms/Terms';
+import Terms from '../Pages/Terms/Terms';
 import Admin from '../Pages/Admin/Admin';
 
 const Stack = createNativeStackNavigator();
-export default LoginStack = () => {
+const LoginStack = () => {
   return (
     <Stack.Navigator initialRouteName="Splash">
       <Stack.Screen
@@ -39,3 +39,4 @@ export default LoginStack = () => {
     </Stack.Navigator>
   );
 };
+export default LoginStack
